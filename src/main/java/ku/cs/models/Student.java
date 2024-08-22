@@ -31,7 +31,11 @@ public class Student {
 
     public String grade()
     {
-        return "F";
+        if (this.score >= 80) return "A";
+        else if (this.score >= 70) return "B";
+        else if (this.score >= 60) return "C";
+        else if (this.score >= 50) return "D";
+        else return "F";
     }
 
     public boolean isId(String id) {
